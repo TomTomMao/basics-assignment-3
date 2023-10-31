@@ -1,0 +1,9 @@
+<button (click)="toggleShowFish()">Display Details</button>
+<p *ngIf="showFish">fish=expansive</p>
+<div
+  *ngFor="let date of buttonClicks; index as i"
+  [ngStyle]="{ backgroundColor: i >= 4 && 'blue' }"
+  [ngClass]="{ white: i >= 4 }"
+>
+  {{ date }}
+</div>
